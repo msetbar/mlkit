@@ -31,7 +31,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import com.google.mlkit.vision.demo.BuildConfig;
 import com.google.mlkit.vision.demo.R;
 
 /** Demo app chooser which allows you pick from all available testing Activities. */
@@ -66,7 +65,7 @@ public final class ChooserActivity extends AppCompatActivity
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
-    if (BuildConfig.DEBUG) {
+    if (true) {
       StrictMode.setThreadPolicy(
           new StrictMode.ThreadPolicy.Builder().detectAll().penaltyLog().build());
       StrictMode.setVmPolicy(
